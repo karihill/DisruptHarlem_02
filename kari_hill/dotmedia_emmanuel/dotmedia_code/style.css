@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Drop box</title>
-  <style>
-  
-     
+     body{
+  background: linear-gradient(bottom, rgba(0, 64, 255,1), rgba(0, 64, 255,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0, 64, 255,1), rgba(0, 64, 255,.4));
+  background: -moz-linear-gradient(bottom, rgba(0, 64, 255,1), rgba(0, 64, 255,.4));
+     }
      #navMe{
        margin: 0;
        padding: 0;
@@ -33,10 +31,12 @@
       width: 150px;
       display: block;
       color: white;
-      border: 1px solid white;
+      border: 1px solid #b8b894;
       text-shadow: 5px 5px 5px black;
      }  
-     
+          #toolbar{
+      background-color: #b8b894;
+     }
      #navMe ul ul{
        position: absolute;
        visibility: hidden;
@@ -64,50 +64,35 @@
        clear: both;
        margin: 0;
        padding: 0;
-    }  
- 
-    
-  </style>
-</head>
- <body>
-<nav>
-<div id="wrapper">
-<div id="navMe">  
-   <ul>
+    } 
+    .movies_pics {
+       position: relative;
+       margin: 5% auto;
+       padding: 0 auto;
+       width: 100%;
+    }
+    .act_movie_pics{
+       position: inherit;
+       width: 30%;
+       float: left;
+       margin: 1.66%;
+      z-index: -9999;
+    }
+    .footer {
+    padding: 0.5em;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    clear: left;
+    text-align: center;
+   }
+   #link_move{
+    margin-left: 10%; 
+   }
+   .link_footer{
+     color: white;
+   }
+   a.link_footer:link{
+    text-decoration:none;
+    padding-right: 3%;
 
-     <li><a href="#"> Movies</a>
-        <ul>
-          <li><a href="#"> Recently Added </a></li>
-          <li><a href="#"> Genre </a></li>
-          <li><a href="#"> Top Rated </a></li>       
-        </ul>     
-     </li>
-    </ul>   
-
-   <ul>
-     <li><a href="#"> TV Shows</a>
-        <ul>
-          <li><a href="#"> Recently Added </a></li>
-          <li><a href="#"> Genre </a></li>
-          <li><a href="#"> Top Rated </a></li>          
-        </ul>     
-     </li>
-    </ul>       
-  
-   <ul>
-     <li><a href="#"> Games</a>
-        <ul>
-          <li><a href="#"> Recently Added </a></li>
-          <li><a href="#"> Genre </a></li>
-          <li><a href="#"> Top Rated </a></li>        
-        </ul>     
-     </li>
-    </ul>   
-
- <br class="clearfloat">
- 
-</div> <!--end navMe div-->
-</div> <!--end wrapper div-->
-</nav>       
-</body>                  
-</html>
+   }
